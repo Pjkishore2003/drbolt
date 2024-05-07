@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 40px;
+  }
+    
+  .about-section {
+    padding: 25px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .background{
+    width: 100%;
+    
+    background: url('wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    
+  }
+  .title {
+    color: grey;
+  }
+  

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('wallpaperflare.com_wallpaper.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.bolt-logo{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: rgb(234,229,249);
+    background: linear-gradient(45deg, rgb(82, 38, 27) 0%, rgb(158, 119, 96) 19%, rgb(175, 141, 118) 30%, rgb(110, 98, 71) 46%, rgb(212, 165, 93) 68%, rgb(224, 166, 78) 82%, rgb(41, 1, 1) 97%);
+    backdrop-filter: blur(20px);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 30px;
+    border: #fff;
+}
+
+.bolt-logo h1{
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.bolt-logo .desc p{
+    text-align: center;
+    color: #fff;
+
+}
+
+.working{
+    width: 400px;
+    height: 400px;
+    background: rgb(234,229,249);
+    background: linear-gradient(45deg, rgb(82, 38, 27) 0%, rgb(158, 119, 96) 19%, rgb(175, 141, 118) 30%, rgb(110, 98, 71) 46%, rgb(212, 165, 93) 68%, rgb(224, 166, 78) 82%, rgb(41, 1, 1) 97%);
+    border-radius: 30px;
+    position: absolute;
+    overflow: hidden;
+    top: 420px;
+    left: 20px;
+    z-index: 1;
+    
+}
+
+.logo{
+    font-size: 3em;
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(42,41,104,1) 4%, rgba(72,72,155,1) 9%, rgba(123,123,241,1) 41%, rgba(91,147,245,1) 68%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
+
+.nav_menu a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.nav_menu a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,41,104,1) 4%, rgba(72,72,155,1) 9%, rgba(123,123,241,1) 41%, rgba(91,147,245,1) 68%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition:transform .5s;
+}
+
+.nav_menu a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.nav_menu .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+  
+    transition: .5s;
+
+}
+
+.nav_menu .btnlogin-popup:hover {
+    background: #fff;
+    color: #f5e4f7;
+
+}
